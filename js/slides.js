@@ -1,4 +1,6 @@
-force.login();
+force.login({
+    appId: "3MVG9fMtCkV6eLheIEZplMqWfnDFWubP.RwptOCdBSM76Fp8wY1kgRzZIVQhgZ4dpfN3YzoeeVSPYhMLdz4RH"
+});
 
 var _imageData;
 
