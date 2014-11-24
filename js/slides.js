@@ -1,5 +1,6 @@
 force.login({
     appId: "3MVG9fMtCkV6eLheIEZplMqWfnDFWubP.RwptOCdBSM76Fp8wY1kgRzZIVQhgZ4dpfN3YzoeeVSPYhMLdz4RH",
+    oauthCallbackURL: "https://ccoenraets.github.io/salesforce-mobile-sdk-presentation/oauthcallback.html",
     proxyURL: "https://dev-cors-proxy.herokuapp.com/"
 });
 
