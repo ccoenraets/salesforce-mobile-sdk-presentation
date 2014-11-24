@@ -55,21 +55,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slides.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="slides.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/slides.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2220">
-              <caret line="1" column="98" selection-start-line="1" selection-start-column="98" selection-end-line="1" selection-end-column="98" />
+            <state vertical-scroll-proportion="0.023622047" vertical-offset="0" max-vertical-offset="2235">
+              <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="force.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="force.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/force.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.9409447" vertical-offset="0" max-vertical-offset="7920">
-              <caret line="503" column="0" selection-start-line="503" selection-start-column="0" selection-end-line="503" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7920">
+              <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -621,18 +621,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/slides.js">
+    <entry file="file://$PROJECT_DIR$/lib/force.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2220">
-          <caret line="1" column="98" selection-start-line="1" selection-start-column="98" selection-end-line="1" selection-end-column="98" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7920">
+          <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/force.js">
+    <entry file="file://$PROJECT_DIR$/js/slides.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.9409447" vertical-offset="0" max-vertical-offset="7920">
-          <caret line="503" column="0" selection-start-line="503" selection-start-column="0" selection-end-line="503" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.023622047" vertical-offset="0" max-vertical-offset="2235">
+          <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
           <folding />
         </state>
       </provider>

@@ -1,5 +1,6 @@
 force.login({
-    appId: "3MVG9fMtCkV6eLheIEZplMqWfnDFWubP.RwptOCdBSM76Fp8wY1kgRzZIVQhgZ4dpfN3YzoeeVSPYhMLdz4RH"
+    appId: "3MVG9fMtCkV6eLheIEZplMqWfnDFWubP.RwptOCdBSM76Fp8wY1kgRzZIVQhgZ4dpfN3YzoeeVSPYhMLdz4RH",
+    proxyURL: "https://dev-cors-proxy.herokuapp.com/"
 });
 
 var _imageData;
