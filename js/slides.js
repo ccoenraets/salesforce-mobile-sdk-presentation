@@ -1,5 +1,7 @@
+alert(location.protocol);
 if (location.protocol !== 'https:') {
     location.protocol = 'https:';
+    alert(location.protocol);
 }
 
 force.init({
