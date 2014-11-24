@@ -1,5 +1,7 @@
-if (window.location.protocol === "http:") {
-    window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+if(window.location.protocol != 'https:') {
+
+    location.href = location.href.replace("http://", "https://");
+
 } else {
 
     force.init({
