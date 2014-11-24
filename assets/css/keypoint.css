@@ -73,9 +73,9 @@ p {
     position: relative;
     display: -webkit-box;
     display: -moz-box;
-    /*display: -ms-box;*/
-    /*display: -o-box;*/
-    /*display: box;*/
+    display: -ms-box;
+    display: -o-box;
+    display: box;
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
     -ms-box-orient: vertical;
@@ -94,8 +94,6 @@ p {
     overflow: hidden;
     background-repeat:no-repeat;
     background-size:cover !important;
-    /*width: 100%;*/
-    /*height: 100%;*/
     padding: 1rem;
 }
 
