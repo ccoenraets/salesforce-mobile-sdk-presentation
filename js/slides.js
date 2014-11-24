@@ -1,6 +1,6 @@
-if (window.location.protocol === "http:") {
-    window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
-} else {
+//if (window.location.protocol === "http:") {
+//    window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+//} else {
 
     force.init({
         appId: "3MVG9fMtCkV6eLheIEZplMqWfnDFWubP.RwptOCdBSM76Fp8wY1kgRzZIVQhgZ4dpfN3YzoeeVSPYhMLdz4RH",
@@ -149,4 +149,4 @@ if (window.location.protocol === "http:") {
         }
     });
 
-}
+//}
