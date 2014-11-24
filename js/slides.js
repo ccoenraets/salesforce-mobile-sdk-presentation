@@ -2,7 +2,7 @@ if (window.location.protocol != "https:") {
 
     setTimeout(function() {
         window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
-    });
+    },200);
 
 } else {
 
