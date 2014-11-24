@@ -1,0 +1,90 @@
+.logo {
+    position: absolute;
+    top:10px;
+    right: 10px;
+    width: 99px;
+    height: 63px;
+    background: url('../img/logo.png');
+    background-size: 100%;
+    z-index: 1;
+}
+
+.contact-wrapper {
+    overflow: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    width: 700px;
+    height: 450px;
+    border: solid 1px #BFC2C2;
+    margin-top: 10px;
+    color: #000000;
+}
+
+.build {
+    display: none;
+}
+.built {
+    display: inherit;
+}
+
+
+.prettyprint {
+    border: none;
+}
+
+.prettyprint.small {
+    font-size: 1.3rem !important;
+    line-height: 1.7rem;
+    border:none;
+    padding:1rem 1.3rem;
+    /*line-height: 1.1rem;*/
+    margin-left: 1.8rem;
+    margin-top: 1rem;
+}
+
+.page {
+    padding-top: 10px;
+    position: absolute;
+    width: 279px;
+    height:410px;
+    top:128px;
+    left:372px;
+    transform: translate3d(0,0,0);
+}
+
+.page-left {
+    -webkit-transform: translate3d(-300px, 0, 0);
+    transform: translate3d(-301px, 0, 0);
+}
+.page-center {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.page-right {
+    -webkit-transform: translate3d(301px, 0, 0);
+    transform: translate3d(300px, 0, 0);
+}
+
+.transition {
+    -webkit-transition-duration: .25s;
+    transition-duration: .25s;
+}
+
+.fastclick,
+.needsclick {
+    font-size: 30px;
+    padding-left: 16px;
+}
+
+.grid {
+    display: flex;
+    display: -webkit-box;
+    width: 900px;
+}
+
+.grid-cell {
+    border: solid 1px #666;
+    flex: 1;
+    -webkit-box-flex: 1;
+    margin: 10px 4px;
+    padding: 28px 4px;
+}

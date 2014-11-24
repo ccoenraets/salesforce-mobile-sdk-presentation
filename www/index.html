@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Mobile SDK Overview</title>
+    <link href="assets/css/ionic.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/prettify.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/keypoint.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/slides.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id="menu-btn" class="logo"></div>
+
+<div id="wrapper"></div>
+
+<div id="slides" data-base-url="">
+
+<div class="slide">
+    <img src="images/salesforce-logo.png" style="max-height: 30%"/>
+    <div>
+        <h1 style="font-size: 3.8rem; margin:0; padding:16px 0 0 0;">Mobile SDK Overview</h1>
+        <p>Salesforce1 World Tour, New York City</p>
+        <p>November 19th, 2014</p>
+    </div>
+</div>
+
+<div class="slide">
+    This presentation is meant to run as a hybrid app built with the Mobile SDK on a mobile device. You can run it in the browser, but certain features will not be available.
+    For example, taking a picture of the audience and share it on chatter ("You" slide).
+    If you run this presentation in a browser, make sure you enable the Salesforce OAuth popup. Once you authorize the application, you'll be able to run the samples built directly into this presentation (list of contacts, etc).
+</div>
+
+<div class="slide bg">
+    <h1>Me</h1>
+    <div class="speaker-info">
+        <p><i class="icon ion-person"></i>Christophe Coenraets</p>
+        <p><i class="icon ion-location"></i>Boston, MA</p>
+        <p><i class="icon ion-social-twitter"></i>@ccoenraets</p>
+        <p><i class="icon ion-social-rss"></i>http://coenraets.org</p>
+        <p><i class="icon ion-social-github"></i>https://github.com/ccoenraets</p>
+    </div>
+</div>
+
+<div class="slide">
+    <h1 style="padding-bottom: 10px;">You</h1>
+    <img id="audience-pic"/>
+    <button class="button icon ion-camera picture-btn" style="width: 80px;"></button>
+    <button class="button icon ion-share chatter-btn" style="width: 80px;"></button>
+</div>
+
+<div class="slide">
+    <h1>What's This?</h1>
+</div>
+
+<div class="slide">
+    <h1>A Mobile SDK App!</h1>
+</div>
+
+<div class="slide">
+    <h1>What is the Mobile SDK?</h1>
+    <div>Tools and APIs to build mobile apps on Salesforce1 Platform:
+        <ul style="padding-top:20px;">
+            <li>Authentication</li>
+            <li>Data Access</li>
+            <li>Offline sync</li>
+            <li>Push Notification</li>
+        </ul>
+    </div>
+</div>
+
+<div class="slide">
+    <h1>When to use the Mobile SDK?</h1>
+    <img src="images/design-icon.png" width="210" height="210">
+    <ul>
+        <li>Customer facing applications</li>
+        <li>Complete control over User Experience</li>
+        <li>Deeper integration with device</li>
+    </ul>
+</div>
+
+<div class="slide">
+    <div class="list list-inset">
+        <label class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" placeholder="Search" class="search-key">
+        </label>
+    </div>
+    <div class="contact-wrapper" style="background-color: #ffffff">
+        <ul id="contactList"></ul>
+    </div>
+</div>
+
+
+<div class="slide white">
+    <button class="button icon dashboard-btn">Load Opportunities</button>
+    <div>
+        <div id="chart1" style="width: 940px;height:310px;padding:12px;text-align:center;"></div>
+        <div id="chart2" style="width: 470px;height:310px;float:left;padding:12px;text-align:center;"></div>
+        <div id="chart3" style="width: 470px;height:310px;float:left;padding:12px;text-align:center;"></div>
+    </div>
+</div>
+
+<div class="slide">
+    <h1>Platform Support</h1>
+    <div class="box horizontal">
+        <div>
+            <img src="images/ios.png"/>
+            <h2>Native<br/>iOS</h2>
+        </div>
+        <div>
+            <img src="images/android.png"/>
+            <h2>Native<br/>Android</h2>
+        </div>
+        <div>
+            <img src="images/cordova.png"/>
+            <h2>Hybrid<br/>Cordova-based</h2>
+        </div>
+    </div>
+</div>
+
+<div class="slide">
+    <h1>Hybrid Apps</h1>
+    <img src="images/hybrid.png" style="max-height: 70%"/><br/>
+</div>
+
+<div class="slide">
+    <h1>Hybrid Remote vs Hybrid Local</h1>
+    <table style="width: 900px;">
+        <thead>
+        <tr>
+            <td></td>
+            <td>Hybrid Remote</td>
+            <td>Hybrid Local</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="fragment">
+            <td>UI Generation Tier</td>
+            <td>Server-Side</td>
+            <td>Client-Side</td>
+        </tr>
+        <tr class="fragment">
+            <td>Language</td>
+            <td>Apex</td>
+            <td>JavaScript</td>
+        </tr>
+        <tr class="fragment">
+            <td>Data Access</td>
+            <td>Remoting</td>
+            <td>REST</td>
+        </tr>
+        <tr class="fragment">
+            <td>Offline Support</td>
+            <td>Limited</td>
+            <td>Yes</td>
+        </tr>
+        <tr class="fragment">
+            <td>Performance</td>
+            <td>Slower</td>
+            <td>Faster</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="slide white">
+    <h1>Frameworks</h1>
+    <img src="images/frameworks.jpg"/>
+</div>
+
+<div class="slide horizontal">
+    <div style="margin-right: 100px;">
+        <img src="images/angular-icon.png" width="210" height="210" style="margin-bottom: 0px">
+        <h1>AngularJS</h1>
+    </div>
+    <ol>
+        <li>MVC architecture for client app</li>
+        <li>Dependency Injection</li>
+        <li>Directives</li>
+        <li>Data binding</li>
+        <li>Templates</li>
+    </ol>
+</div>
+
+<div class="slide horizontal">
+    <div style="margin-right: 100px;">
+        <img src="images/ionic-logo.png" width="250">
+    </div>
+    <ol>
+        <li>UI Layer on top of&nbsp;AngularJS</li>
+        <li>UI Components</li>
+        <li>UI Components are AngularJS Directives</li>
+        <li>UI Patterns</li>
+        <li>CLI built on top of Cordova</li>
+    </ol>
+</div>
+
+<div class="slide horizontal">
+    <img src="images/list-complex-example.png" style="max-height: 75%;margin-right: 20px;">
+    <img src="images/sidemenu-example.png" style="max-height: 75%;">
+    <img src="images/pull-refresh-animation.gif" style="max-height: 75%;margin-left: 20px;">
+</div>
+
+<div class="slide">
+<h1>Let's build an app...</h1>
+</div>
+
+<div class="slide">
+<h1>Mobile SDK CLI</h1>
+<pre class="code prettyprint">
+npm install -g cordova forceios
+forceios create
+cd myapp
+cordova build
+</pre>
+</div>
+
+<div class="slide">
+<h1>Cordova CLI with Mobile SDK Plugin</h1>
+<pre class="code prettyprint">
+npm install -g cordova
+cordova create myapp
+cd myapp
+cordova plugin add https://github.com/forcedotcom/SalesforceMobileSDK-CordovaPlugin
+cordova platform add ios
+cordova build ios
+</pre>
+</div>
+
+<div class="slide">
+<h1>Ionic CLI with Salesforce Starter App</h1>
+<pre class="code prettyprint">
+npm install -g cordova ionic
+ionic start  myapp salesforce
+cd myapp
+ionic platform add ios
+ionic build ios
+</pre>
+</div>
+
+<div class="slide">
+    <div class="box horizontal">
+        <div style="padding: 20px;max-height: 75%;max-width: 25%;">
+            <img src="images/contact_menu.png">
+            Side Menu
+        </div>
+        <div style="padding: 20px;max-height: 75%;max-width: 25%;">
+            <img src="images/contact_list.png">
+            List
+        </div>
+        <div style="padding: 20px;max-height: 75%;max-width: 25%;">
+            <img src="images/contact_details.png">
+            Details
+        </div>
+
+    </div>
+</div>
+
+
+<div class="slide">
+<h1>Thank You!</h1>
+@ccoenraets
+</div>
+
+
+</div> <!-- end of '#slides' -->
+
+<!--<button id="menu-btn" class="button button-clear icon ion-navicon"></button>-->
+
+<div id="menu" class="dark-bg">
+    <div class="title">Keypoint</div>
+    <div class="scroller cf">
+        <ol id="list" class="list"></ol>
+    </div>
+</div>
+
+<div id="build-btn-right" style="position: absolute;bottom:0; right:0; width: 150px; height: 150px;border:solid 0px;z-index:100;"></div>
+<div id="build-btn-left" style="position: absolute;bottom:0; left:0; width: 150px; height: 150px;border:solid 0px;z-index:100"></div>
+
+</div>
+
+<script src="cordova.js"></script>
+<script src="lib/force.js"></script>
+<script src="lib/jquery.js"></script>
+<script src="lib/fastclick.js"></script>
+<script src="lib/prettify.js"></script>
+<script src="lib/swipeview.js"></script>
+
+<script src="lib/accounting.min.js"></script>
+<script src="lib/moment.min.js"></script>
+<script src="lib/chartjs/globalize.min.js"></script>
+<script src="lib/chartjs/dx.chartjs.js"></script>
+
+<script src="js/data.js"></script>
+<script src="js/dataservice.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/keypoint.js"></script>
+<script src="js/slides.js"></script>
+
+</body>
+</html>
